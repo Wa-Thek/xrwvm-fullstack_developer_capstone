@@ -1,0 +1,180 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <title>Contact Us</title>
+  
+  <style>
+    .contact-card-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .contact-card {
+        background-color: white;
+        width: 100%;
+        max-width: 800px;
+        border-radius: 30px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        overflow: hidden;
+        border: 1px solid #e0e0e0;
+    }
+
+    .header-image {
+        width: 100%;
+        height: 250px;
+        background-image: url('https://images.pexels.com/photos/5982898/pexels-photo-5982898.jpeg'); 
+        background-size: cover;
+        background-position: center;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .content-area {
+        display: flex;
+        padding: 40px;
+        align-items: center;
+    }
+
+    .icon-column {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 3px solid #555;
+        padding-right: 20px;
+    }
+
+    .icon-svg {
+        width: 120px;
+        height: 120px;
+        fill: #00ced1;
+    }
+
+    .info-column {
+        flex: 1.5;
+        padding-left: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-group {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .c-label {
+        color: #5b8bd0;
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+
+    .c-value {
+        color: #5b8bd0;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    
+    .c-value:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .content-area {
+            flex-direction: column;
+            text-align: center;
+        }
+        .icon-column {
+            border-right: none;
+            border-bottom: 2px solid #ddd;
+            padding-right: 0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .info-column {
+            padding-left: 0;
+        }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container contact-card-container">
+    <div class="contact-card">
+        <div class="header-image"></div>
+
+        <div class="content-area">
+            <div class="icon-column">
+                <svg class="icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 3.1 1.45 5.86 3.73 7.64.21.16.42.31.64.45C6.91 21.05 8.35 21.75 10 21.94V20h4v1.94c1.65-.19 3.09-.89 3.63-1.85.22-.14.43-.29.64-.45C20.55 17.86 22 15.1 22 12c0-5.52-4.48-10-10-10zm0 2c4.41 0 8 3.59 8 8 0 1.05-.22 2.05-.6 2.97-.24.58-.55 1.13-.91 1.63-.67-.3-1.4-.49-2.18-.54l-1.07 3.2c-.1.3-.43.46-.73.36l-2.83-.94c-.3-.1-.46-.43-.36-.73l1.07-3.2c.45.03.89.14 1.3.31.29-.53.53-1.1.7-1.7.34-1.21.34-2.52 0-3.73-.55-1.95-2.07-3.47-4.02-4.02-1.21-.34-2.52-.34-3.73 0-1.95.55-3.47 2.07-4.02 4.02-.34 1.21-.34 2.52 0 3.73.17.6.41 1.17.7 1.7.42-.17.85-.28 1.3-.31l1.07 3.2c.1.3-.06.63-.36.73l-2.83.94c-.3.1-.63-.06-.73-.36l-1.07-3.2c-.78.05-1.51.24-2.18.54-.36-.5-.67-1.05-.91-1.63C4.22 14.05 4 13.05 4 12c0-4.41 3.59-8 8-8z"/>
+                    <circle cx="9" cy="12" r="1.5"/>
+                    <circle cx="15" cy="12" r="1.5"/>
+                    <path d="M12 4a4 4 0 0 1 4 4c0 1.65-.96 3.08-2.35 3.71l1.6 3.2A7.94 7.94 0 0 1 20 12c0 4.41-3.59 8-8 8s-8-3.59-8-8c0-1.28.31-2.48.86-3.54l1.76 1.76A5.96 5.96 0 0 0 6 12c0 3.31 2.69 6 6 6s6-2.69 6-6a5.96 5.96 0 0 0-.75-2.84l-1.46-2.92C15.14 6.7 14.18 6 12 6a2 2 0 1 0 0 4c0 .36.09.69.25.99l-1.55 1.55A3.94 3.94 0 0 1 8 8a4 4 0 0 1 4-4z"/>
+                    <path d="M4 20v-2c0-2.21 3.58-4 8-4s8 1.79 8 4v2H4z"/>
+                    <path d="M12 2a6 6 0 0 1 6 6v3h2V8a8 8 0 0 0-16 0v3h2V8a6 6 0 0 1 6-6z"/>
+                    <path d="M20 11v2c0 1.3-.84 2.4-2 2.82V16h-2v-2.18c-1.16-.42-2-1.52-2-2.82v-2h6z" transform="scale(0.8) translate(8, 6)"/>
+                </svg>
+            </div>
+
+            <div class="info-column">
+                <div class="contact-group">
+                    <p class="c-label">Contact Customer Service</p>
+                    <a href="mailto:support@bestcars.com" class="c-value">support@bestcars.com</a>
+                </div>
+
+                <div class="contact-group">
+                    <p class="c-label">Contact our National Advertising team</p>
+                    <a href="mailto:NationalSales@bestcars.com" class="c-value">NationalSales@bestcars.com</a>
+                </div>
+
+                <div class="contact-group">
+                    <p class="c-label">Contact our Public Relations team</p>
+                    <a href="mailto:PR@bestcars.com" class="c-value">PR@bestcars.com</a>
+                </div>
+
+                <div class="contact-group">
+                    <p class="c-label">Contact the bestcars.com offices</p>
+                    <a href="tel:312-611-1111" class="c-value">312-611-1111</a>
+                </div>
+
+                <div class="contact-group">
+                    <p class="c-label">Become a bestcars.com car dealer</p>
+                    <a href="https://growwithbestcars.com" class="c-value">Visit growwithbestcars.com</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </div>
+
+</body>
+</html>
